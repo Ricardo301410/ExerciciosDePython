@@ -12,5 +12,7 @@ while not acertou:
         acertou = True
     else:
         if jogador < computador:
-            print('Um pouco mais alto, tente novamente!')
+            print('Um pouco mais alto!')
+        if jogador > computador:
+            print('Um pouco mais baixo!')
 print('PARABÉNS, você acertou na {}ª tentativa.'.format(con_palpite))
