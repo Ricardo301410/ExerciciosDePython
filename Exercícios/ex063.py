@@ -1,15 +1,14 @@
 """Escreva um programa que leia um número N inteiro qualquer e mostre na tela os N primeiros elementos de uma Sequência de Fibonacci. Exemplo: 0 – 1 – 1 – 2 – 3 – 5 – 8"""
 
-numero = int(input('Digite um número: '))
-ultimo = 1
-penultimo = 1
-if numero == 1 or numero == 2:
-    print('1')
-else:
-    count = 3
-    while count <= numero:
-        termo = ultimo + penultimo # 2
-        penultimo = ultimo # 1
-        ultimo = termo # 2
-        count += 1 # 4
-print(termo)
+numero = int(input('Digite quantos termos você quer mostrar: '))
+termo_1 = 0
+termo_2 = 1
+print('{}, {}'.format(termo_1, termo_2), end=', ')
+cont = 3
+while cont <= numero:
+    termo_3 = termo_1 + termo_2 # 1
+    print('{}'.format(termo_3), end=', ')
+    termo_1 = termo_2 # 1
+    termo_2 = termo_3 # 2
+    cont += 1 # 4
+print('fim')
