@@ -4,8 +4,16 @@ cont = soma = 0
 continuar = 'S'
 while continuar == 'S':
     numero = int(input('Digite um número: '))
-    continuar = str(input('Deseja continuar? [S/N]: ')).upper()[0]
+    continuar = str(input('Deseja continuar? [S/N]: ')).strip().upper()[0]
     soma += numero
     cont += 1
+    if cont == 1:
+        maior = menor = numero
+    else:
+        if numero > maior:
+            maior = numero
+        if numero < menor:
+            menor = numero
 media = soma / cont
-print('A média dos números digitados foi {}.'.format(media))
+print('Você digitou {} números, a média foi {}'.format(cont, media), end=', ')
+print('o maior foi {} e o menor foi {}.'.format(maior, menor))
