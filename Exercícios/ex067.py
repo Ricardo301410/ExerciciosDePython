@@ -6,3 +6,5 @@ while True:
         break
     for n in range(1, 11):
         print(f'{numero} X {n:2} = {numero * n}')
+    print('-' * 40)
+print('Programa encerrado.')
