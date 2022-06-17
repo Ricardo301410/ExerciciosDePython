@@ -3,7 +3,6 @@ A) Quantas vezes apareceu o valor 9.
 B) Em que posição foi digitado o primeiro valor 3.
 C) Quais foram os números pares."""
 
-cont = 0
 numeros = (int(input('Digite o 1º numero: ')), int(input('Digite o 2º numero: ')), int(input('Digite o 3º numero: ')), int(input('Digite o 4º numero: ')))
 print(f'Você digitou os números {numeros}')
 print(f'Ao todo o número 9 apareceu {numeros.count(9)} vezes')
