@@ -3,15 +3,13 @@
 valores = list()
 
 while True:
-    valores.append(int(input('Digite um número: ')))
-    for n in valores:
-        if n in valores:
-            valores.remove(n)
-    '''continuar = str(input('Quer continuar? [S/N] ')).strip().upper()[0]
-    while continuar not in 'SN':
-        continuar = str(input('Resposta inválida! Quer continuar? [S/N] ')).strip().upper()[0]
-    if continuar == 'N':
-        break'''
-    if n == 00:
+    numero = (int(input('Digite um número: ')))
+    if numero not in valores:
+        valores.append(numero)
+        print('Valor adicionado com sucesso!')
+    else:
+        print('Valor duplicado! Não adicionado...')
+    continuar = str(input('Quer continuar? [S/N] ')).strip().upper()[0]
+    if continuar in 'N':
         break
-print(f'Os valores únicos digitados foram {valores}')
+print(f'Os valores únicos digitados foram {valores.sort()}')
