@@ -4,9 +4,9 @@
 – ESCALENO: todos os lados diferentes"""
 
 r1 = float(input('Informe o tamanho da primeira reta: '))
-r2 = float(input('Informe o tamanho da segundaa reta: '))
+r2 = float(input('Informe o tamanho da segunda reta: '))
 r3 = float(input('Informe o tamanho da terceira reta: '))
-if r1 < r2 + r3 and r2 < r3 + r2 and r3 < r1 + r2:
+if r1 < r2 + r3 and r2 < r3 + r1 and r3 < r1 + r2:
     print('As medidas acima formam um triângulo ', end='')
     if r1 == r2 and r2 == r3 and r3 == r1:
         print('EQUILÁTERO')
